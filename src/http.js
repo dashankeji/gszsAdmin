@@ -39,7 +39,7 @@ axios.interceptors.request.use(
 axios.interceptors.response.use(function (response) {
     // 对响应数据做处理
     
-	if(response.data.code == 400 && response.data.msg == 'token已经失效了' || response.data.msg == '没有token"'){
+	if(response.data.code == 400 && response.data.msg == 'token已经失效了' || response.data.msg == '没有token'){
 		alert(response.data.msg);
 		store.getters.incrementLoginFlagFalse();
 	};

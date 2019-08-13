@@ -46,6 +46,7 @@ export default {
         }
     },
     mounted () {
+	    alert(111);
         //配置的初始化
         tinymce.init({});
     },
